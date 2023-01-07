@@ -1,3 +1,6 @@
+@import "https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap";
+
 :root {
 	--color-rich-black-fogra-29: hsl(218deg 22% 7% / 100%);
 	--color-independence: hsl(216deg 30% 31% / 100%);
@@ -11,18 +14,15 @@
 body {
 	background-color: var(--color-rich-black-fogra-29);
 	color: var(--color-bright-lilac);
-	font-family: Open Sans, sans-serif;
+	font-family: Epilogue, sans-serif;
 	font-size: clamp(16rem, 3vw, 18rem);
 	line-height: 1.5;
 }
 
 .main-header {
+	font-family: Montserrat, Epilogue, sans-serif;
+	font-weight: 300;
 	padding-block: clamp(16rem, 8vw, 50rem);
-	padding-inline: clamp(16rem, 8vw, 50rem);
-	text-align: center;
-}
-
-.main {
 	padding-inline: clamp(16rem, 8vw, 50rem);
 	text-align: center;
 }
@@ -30,6 +30,15 @@ body {
 .main-title {
 	font-size: clamp(22rem, 8vw, 50rem);
 	margin-block-end: 20rem;
+}
+
+.secondary-title {
+	font-size: clamp(20rem, 4vw, 30rem);
+}
+
+.main {
+	padding-inline: clamp(16rem, 8vw, 50rem);
+	text-align: center;
 }
 
 .my-image {
@@ -56,7 +65,7 @@ body {
 }
 
 .social-links__link:focus-visible {
-	border-radius: 5rem;
-	outline: 2rem dashed var(--color-bright-lilac);
+	border-radius: 3rem;
+	outline: 2rem dashed var(--color-independence);
 	outline-offset: 2rem;
 }
