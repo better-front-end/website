@@ -8,7 +8,10 @@
 	"scripts": {
 		"lint:scripts": "npx eslint . --ext .js,.ts,.json",
 		"lint:styles": "npx stylelint \"**/*.{css,scss}\"",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"build": "npm run build:scripts && npm run build:styles",
+		"build:scripts": "npx esbuild src/scripts.js --bundle --minify --sourcemap --outfile=dist/scripts.js",
+		"build:styles": "npx postcss src/styles.css > dist/styles.css"
 	},
 	"repository": {
 		"type": "git",
@@ -21,20 +24,23 @@
 	},
 	"homepage": "https://github.com/better-front-end/website#readme",
 	"dependencies": {
-		"the-new-css-reset": "^1.8.2"
+		"the-new-css-reset": "~1.8.2"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "~17.3.0",
 		"@commitlint/config-conventional": "~17.3.0",
 		"@yakirgot/linters": "1.2.3",
+		"cssnano": "^5.1.14",
+		"esbuild": "~0.16.15",
 		"eslint": "~8.30.0",
 		"eslint-config-prettier": "~8.5.0",
 		"eslint-plugin-json": "~3.1.0",
 		"eslint-plugin-prettier": "~4.2.1",
 		"eslint-plugin-unicorn": "~45.0.2",
 		"husky": "~8.0.2",
+		"postcss": "^8.4.21",
+		"postcss-cli": "^10.1.0",
 		"postcss-html": "~1.5.0",
-		"postcss-scss": "~4.0.6",
 		"prettier": "~2.8.1",
 		"stylelint": "~14.16.0",
 		"stylelint-config-html": "~1.1.0",
