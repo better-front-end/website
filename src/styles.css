@@ -1,0 +1,16 @@
+:root {
+	--color-rich-black-fogra-29: hsl(218deg 22% 7% / 100%);
+	--color-independence: hsl(216deg 30% 31% / 100%);
+	--color-dark-blue-gray: hsl(238deg 15% 45% / 100%);
+	--color-mountbatten-pink: hsl(305deg 15% 55% / 100%);
+	--color-bright-lilac: hsl(273deg 77% 78% / 100%);
+
+	font-size: 6.25%;
+}
+
+body {
+	background-color: var(--color-rich-black-fogra-29);
+	color: var(--color-bright-lilac);
+	font-family: Open Sans, sans-serif;
+	font-size: 16rem;
+}
