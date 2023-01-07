@@ -11,12 +11,10 @@ async function bundle() {
 		outfile: "./dist/scripts.js",
 		plugins: [
 			copy({
-				// this is equal to process.cwd(), which means we use cwd path as base path to resolve `to` path
-				// if not specified, this plugin uses ESBuild.build outdir/outfile options as base path.
 				resolveFrom: "cwd",
 				assets: [
 					{
-						from: ["./assets/*"],
+						from: ["./src/assets/*"],
 						to: ["./dist/assets"],
 					},
 					{
