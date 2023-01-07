@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="referrer" content="same-origin" />
 		<title>Better Front-End</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,24 +33,60 @@
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
-		<noscript
-			><iframe
+		<noscript>
+			<iframe
 				src="https://www.googletagmanager.com/ns.html?id=GTM-TT5TQSF"
 				height="0"
 				width="0"
 				style="display: none; visibility: hidden"
-			></iframe
-		></noscript>
+			>
+			</iframe>
+		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
-		<header>
+		<header class="main-header">
 			<h1 class="main-title">Better Front-End</h1>
 
 			<h2>Yakir Gottesman - Senior Frontend Developer</h2>
 		</header>
 
-		<img src="assets/yakir.jfif" alt="Yakir Gottesman" />
+		<main class="main" id="main">
+			<img class="my-image" src="assets/yakir.jfif" alt="Yakir Gottesman" />
 
-		<footer>Footer</footer>
+			<ul class="social-links__list">
+				<li>
+					<a
+						class="social-links__link"
+						href="https://www.linkedin.com/in/yakirgot"
+						target="_blank"
+						title="Go to Yakir Gottesman's LinkedIn profile"
+					>
+						LinkedIn
+					</a>
+				</li>
+
+				<li>
+					<a
+						class="social-links__link"
+						href="https://github.com/yakirgot"
+						target="_blank"
+						title="Go to Yakir Gottesman's Personal GitHub"
+					>
+						Personal GitHub
+					</a>
+				</li>
+
+				<li>
+					<a
+						class="social-links__link"
+						href="https://github.com/better-front-end"
+						target="_blank"
+						title="Go to Yakir Gottesman's Better Front-End GitHub"
+					>
+						Better Front-End GitHub
+					</a>
+				</li>
+			</ul>
+		</main>
 	</body>
 </html>

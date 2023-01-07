@@ -12,5 +12,51 @@ body {
 	background-color: var(--color-rich-black-fogra-29);
 	color: var(--color-bright-lilac);
 	font-family: Open Sans, sans-serif;
-	font-size: 16rem;
+	font-size: clamp(16rem, 3vw, 18rem);
+	line-height: 1.5;
+}
+
+.main-header {
+	padding-block: clamp(16rem, 8vw, 50rem);
+	padding-inline: clamp(16rem, 8vw, 50rem);
+	text-align: center;
+}
+
+.main {
+	padding-inline: clamp(16rem, 8vw, 50rem);
+	text-align: center;
+}
+
+.main-title {
+	font-size: clamp(22rem, 8vw, 50rem);
+	margin-block-end: 20rem;
+}
+
+.my-image {
+	border-radius: 50%;
+	max-inline-size: min(clamp(250rem, 50vw, 400rem), 100%);
+}
+
+.social-links__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20rem;
+	padding-block: clamp(16rem, 8vw, 50rem);
+}
+
+.social-links__link {
+	color: var(--color-mountbatten-pink);
+	transition: color 80ms ease;
+}
+
+@media (hover: hover) {
+	.social-links__link:hover {
+		color: var(--color-bright-lilac);
+	}
+}
+
+.social-links__link:focus-visible {
+	border-radius: 5rem;
+	outline: 2rem dashed var(--color-bright-lilac);
+	outline-offset: 2rem;
 }
