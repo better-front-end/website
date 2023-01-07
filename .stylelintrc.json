@@ -1,0 +1,5 @@
+{
+	"extends": [
+		"./node_modules/@yakirgot/linters/stylelint/stylelint-defaults.json"
+	]
+}

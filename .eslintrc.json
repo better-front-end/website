@@ -1,0 +1,12 @@
+{
+	"root": true,
+	"env": {
+		"es6": true,
+		"node": true,
+		"browser": true
+	},
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"extends": ["./node_modules/@yakirgot/linters/eslint/eslint-defaults.json"]
+}
