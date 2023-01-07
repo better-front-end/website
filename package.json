@@ -10,9 +10,9 @@
 		"lint:styles": "npx stylelint \"**/*.{css,scss}\"",
 		"prepare": "husky install",
 		"serve": "cd src && npx live-server --no-browser",
-		"build": "npm run build:scripts && npm run build:styles && cp src/index.html dist/index.html",
-		"build:scripts": "npx esbuild src/scripts.js --bundle --minify --sourcemap --outfile=dist/scripts.js",
-		"build:styles": "npx postcss src/styles.css > dist/styles.css"
+		"build": "npm run build:scripts && npm run build:styles",
+		"build:scripts": "node build.js",
+		"build:styles": "npx postcss src/**.css --dir dist"
 	},
 	"repository": {
 		"type": "git",
@@ -30,6 +30,7 @@
 		"@yakirgot/linters": "1.2.3",
 		"cssnano": "~5.1.14",
 		"esbuild": "~0.16.15",
+		"esbuild-plugin-copy": "^2.0.1",
 		"eslint": "~8.30.0",
 		"eslint-config-prettier": "~8.5.0",
 		"eslint-plugin-json": "~3.1.0",
