@@ -9,7 +9,7 @@
 		"lint:scripts": "npx eslint . --ext .js,.ts,.json",
 		"lint:styles": "npx stylelint \"**/*.{css,scss}\"",
 		"prepare": "husky install",
-		"build": "npm run build:scripts && npm run build:styles",
+		"build": "npm run build:scripts && npm run build:styles && cp src/index.html dist/index.html",
 		"build:scripts": "npx esbuild src/scripts.js --bundle --minify --sourcemap --outfile=dist/scripts.js",
 		"build:styles": "npx postcss src/styles.css > dist/styles.css"
 	},
