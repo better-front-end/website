@@ -24,9 +24,6 @@
 		"url": "https://github.com/better-front-end/website/issues"
 	},
 	"homepage": "https://better-front-end.com/",
-	"dependencies": {
-		"the-new-css-reset": "~1.8.2"
-	},
 	"devDependencies": {
 		"@commitlint/cli": "~17.3.0",
 		"@commitlint/config-conventional": "~17.3.0",
