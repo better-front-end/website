@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "~17.3.0",
 		"@commitlint/config-conventional": "~17.3.0",
-		"@yakirgot/linters": "1.2.3",
+		"@yakirgot/linters": "1.2.4",
 		"cssnano": "~5.1.14",
 		"esbuild": "~0.16.15",
 		"esbuild-plugin-copy": "^2.0.1",
