@@ -37,7 +37,7 @@
 		"eslint-plugin-prettier": "~4.2.1",
 		"eslint-plugin-unicorn": "~45.0.2",
 		"husky": "~8.0.2",
-		"live-server": "^1.2.2",
+		"live-server": "^1.1.0",
 		"postcss": "~8.4.21",
 		"postcss-cli": "~10.1.0",
 		"postcss-html": "~1.5.0",
