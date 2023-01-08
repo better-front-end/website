@@ -56,13 +56,18 @@ body {
 
 .social-links__link {
 	color: var(--color-mountbatten-pink);
-	transition: color 80ms ease;
+	transition: color 80ms ease, filter 200ms ease;
 }
 
 @media (hover: hover) {
 	.social-links__link:hover {
 		color: var(--color-bright-lilac);
+		filter: drop-shadow(0 0 1em var(--color-dark-blue-gray));
 	}
+}
+
+.social-links__link:active {
+	filter: drop-shadow(0 0 0.8em var(--color-mountbatten-pink));
 }
 
 .social-links__link:focus-visible {
