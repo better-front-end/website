@@ -13,8 +13,12 @@
 }
 
 body {
-	background-color: var(--color-rich-black-fogra-29);
-	color: var(--color-bright-lilac);
+	--body-background-color: var(--color-rich-black-fogra-29);
+	--main-text-color: var(--color-bright-lilac);
+	--main-padding: clamp(16rem, 8vw, 50rem);
+
+	background-color: var(--body-background-color);
+	color: var(--main-text-color);
 	font-family: Epilogue, sans-serif;
 	font-size: clamp(16rem, 3vw, 18rem);
 	line-height: 1.5;
@@ -23,8 +27,8 @@ body {
 .main-header {
 	font-family: Montserrat, Epilogue, sans-serif;
 	font-weight: 300;
-	padding-block: clamp(16rem, 8vw, 50rem);
-	padding-inline: clamp(16rem, 8vw, 50rem);
+	padding-block: var(--main-padding);
+	padding-inline: var(--main-padding);
 	text-align: center;
 }
 
@@ -38,7 +42,7 @@ body {
 }
 
 .main {
-	padding-inline: clamp(16rem, 8vw, 50rem);
+	padding-inline: var(--main-padding);
 	text-align: center;
 }
 
@@ -51,17 +55,21 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 20rem;
-	padding-block: clamp(16rem, 8vw, 50rem);
+	padding-block: var(--main-padding);
 }
 
 .social-links__link {
-	color: var(--color-mountbatten-pink);
+	--social-links-color: var(--color-mountbatten-pink);
+
+	color: var(--social-links-color);
+	padding: 5rem;
 	transition: color 80ms ease, filter 200ms ease;
 }
 
 @media (hover: hover) {
 	.social-links__link:hover {
-		color: var(--color-bright-lilac);
+		--social-links-color: var(--color-bright-lilac);
+
 		filter: drop-shadow(0 0 1em var(--color-dark-blue-gray));
 	}
 }
