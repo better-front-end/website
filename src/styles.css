@@ -8,8 +8,14 @@
 	--color-dark-blue-gray: hsl(238deg 15% 45%);
 	--color-mountbatten-pink: hsl(305deg 15% 55%);
 	--color-bright-lilac: hsl(273deg 77% 78%);
+	--color-cultured: hsl(225deg 20% 96%);
 
 	font-size: 6.25%;
+}
+
+::selection {
+	background-color: var(--main-text-color);
+	color: var(--body-background-color);
 }
 
 body {
@@ -31,7 +37,7 @@ body {
 
 @media (prefers-color-scheme: light) {
 	body {
-		--body-background-color: hsl(0deg 0% 86%);
+		--body-background-color: var(--color-cultured);
 		--main-text-color: var(--color-rich-black-fogra-29);
 	}
 }
@@ -89,7 +95,7 @@ body {
 @media (prefers-color-scheme: light) {
 	.social-links__link {
 		--social-links-color: var(--color-independence);
-		--social-links-color-hover: var(--color-dark-blue-gray);
+		--social-links-color-hover: var(--color-rich-black-fogra-29);
 		--drop-shadow-color-active: var(--color-independence);
 	}
 }
