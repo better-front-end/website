@@ -64,7 +64,7 @@ body {
 
 .my-image {
 	border-radius: 50%;
-	max-inline-size: min(clamp(15.625rem, 50vw, 25rem), 100%);
+	max-inline-size: min(clamp(15rem, 50vw, 25rem), 100%);
 }
 
 .social-links {
@@ -77,8 +77,8 @@ body {
 
 .social-links__link {
 	color: var(--social-links-color);
-	padding-block: 0.313rem;
-	padding-inline: 0.938rem;
+	padding-block: 0.3rem;
+	padding-inline: 1rem;
 	transition: color 80ms ease, filter 200ms ease;
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .social-links__link:focus-visible {
-	border-radius: 0.188rem;
+	border-radius: 0.2rem;
 	outline: 0.125rem dashed var(--color-independence);
 	outline-offset: 0.125rem;
 }
