@@ -9,6 +9,8 @@
 	--color-mountbatten-pink: hsl(305deg 15% 55%);
 	--color-bright-lilac: hsl(273deg 77% 78%);
 	--color-cultured: hsl(225deg 20% 96%);
+
+	color-scheme: dark light;
 }
 
 ::selection {
