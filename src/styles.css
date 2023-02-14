@@ -118,6 +118,12 @@ body {
 	outline-offset: 0.125rem;
 }
 
+@media (forced-colors: active) or (prefers-contrast: more) {
+	.social-links__link:focus-visible {
+		outline: revert;
+	}
+}
+
 .social-links__link--accent {
 	font-size: 1.2em;
 	font-weight: 500;
