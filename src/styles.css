@@ -79,7 +79,7 @@ body {
 	text-align: center;
 }
 
-.my-image {
+.yakir-gottesman-image {
 	border-radius: 50%;
 	max-inline-size: min(clamp(15rem, 50vw, 22rem), 100%);
 }
