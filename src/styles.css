@@ -38,7 +38,7 @@ body {
 @media (prefers-color-scheme: light) {
 	body {
 		--body-background-color: var(--color-cultured);
-		--main-text-color: var(--color-rich-black-fogra-29);
+		--main-text-color: var(--color-independence);
 	}
 }
 
