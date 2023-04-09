@@ -59,6 +59,7 @@ body {
 }
 
 .logo-image {
+	inline-size: 100%;
 	transition: filter 200ms ease;
 }
 
