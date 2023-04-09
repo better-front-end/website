@@ -58,19 +58,15 @@ body {
 	max-inline-size: 30rem;
 }
 
-.logo-image {
-	display: none;
-}
-
 @media (prefers-color-scheme: dark) {
-	[data-logo-theme="dark"] {
-		display: revert;
+	.logo {
+		--logo-fill: #f3f4f7;
 	}
 }
 
 @media (prefers-color-scheme: light) {
-	[data-logo-theme="light"] {
-		display: revert;
+	.logo {
+		--logo-fill: #374a67;
 	}
 }
 
