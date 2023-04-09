@@ -58,15 +58,25 @@ body {
 	max-inline-size: 30rem;
 }
 
+.logo-image {
+	transition: filter 200ms ease;
+}
+
 @media (prefers-color-scheme: dark) {
-	.logo {
-		--logo-fill: #f3f4f7;
+	.logo-image {
+		--logo-fill: 243 244 247;
 	}
 }
 
 @media (prefers-color-scheme: light) {
-	.logo {
-		--logo-fill: #374a67;
+	.logo-image {
+		--logo-fill: 55 74 103;
+	}
+}
+
+@media (hover: hover) {
+	.logo-image:hover {
+		filter: drop-shadow(0.3rem 0.3rem 0.3rem rgb(var(--logo-fill) / 15%));
 	}
 }
 
