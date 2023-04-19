@@ -274,3 +274,7 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,visualstudiocode,node
+
+/test-results/
+/playwright-report/
+/playwright/.cache/
