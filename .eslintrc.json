@@ -10,5 +10,24 @@
 	},
 	"extends": [
 		"./node_modules/@better-front-end/linters/eslint/eslint-defaults.json"
+	],
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"extends": ["plugin:@typescript-eslint/recommended"],
+			"parser": "@typescript-eslint/parser",
+			"plugins": ["@typescript-eslint"]
+		},
+		{
+			"files": ["tests/*.spec.ts"],
+			"extends": ["plugin:playwright/playwright-test"],
+			"rules": {
+				"playwright/prefer-strict-equal": "error",
+				"playwright/prefer-lowercase-title": "error",
+				"playwright/prefer-to-be": "error",
+				"playwright/prefer-to-have-length": "error",
+				"playwright/require-top-level-describe": "error"
+			}
+		}
 	]
 }
