@@ -9,9 +9,7 @@ test.describe("homepage", () => {
 	test("should not have any automatically detectable accessibility issues", async ({
 		page,
 	}) => {
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-		// @ts-ignore
-		const axeBuilder = new AxeBuilder.default({ page });
+		const axeBuilder = new AxeBuilder({ page });
 		const axeResults = await axeBuilder.analyze();
 
 		expect(axeResults.violations).toStrictEqual([]);
