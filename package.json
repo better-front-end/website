@@ -27,7 +27,7 @@
 	"homepage": "https://better-front-end.com/",
 	"devDependencies": {
 		"@axe-core/playwright": "~4.7.0",
-		"@better-front-end/linters": "1.4.1",
+		"@better-front-end/linters": "1.4.2",
 		"@commitlint/cli": "~17.6.1",
 		"@commitlint/config-conventional": "~17.6.1",
 		"@playwright/test": "~1.33.0",
