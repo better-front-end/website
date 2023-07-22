@@ -107,7 +107,9 @@ body {
 	color: var(--social-links-color);
 	padding-block: 0.3rem;
 	padding-inline: 1rem;
-	transition: color 80ms ease, filter 200ms ease;
+	transition:
+		color 80ms ease,
+		filter 200ms ease;
 }
 
 @media (prefers-color-scheme: dark) {
